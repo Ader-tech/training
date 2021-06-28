@@ -6,7 +6,13 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function index(Request $request){
+    public function index(){
+
         return view('index');
     } 
+
+    public function show()
+    {
+        return view('show');
+    }
 }
