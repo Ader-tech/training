@@ -1,0 +1,9 @@
+body{
+    background-color: lightslategrey;
+}
+form{
+    text-align: justify;
+    color: black;
+    font-size: 12px;
+    font-family: "Lucida Sans";
+}
