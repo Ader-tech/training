@@ -16,28 +16,33 @@
 				<div class="col-md-8">
 					<div class="card">
 						<div class="card-header">
-							<h4>Create Post</h4>
+							<h4 class="float-start">Edit My Profile</h4>
+								
 						</div>
+
+
 						<div class="card-body">
 							<form method="POST" action="">
 								<div class="mb-3">
-									<label><h5>Post Title</h5></label>
-									<input type="text" name="" class="form-control rounded-pill">
+									<label><h5>Name</h5></label>
+									<input type="text" name="" class="form-control rounded-pill" value="Ronke">
 								</div>
 
 								<div class="mb-3">
-									<label><h4>Post Body</h5></label>
-									<input type="text" name="" class="form-control rounded-pill">
+									<label><h5>Username</h5></label>
+									<input type="text" name="" class="form-control rounded-pill" value="Ronke123">
 								</div>
 
 								<div class="mb-3">
-									<label><h5>Post Image</h5></label>
-									<input type="file" name="" class="form-control rounded-pill">
+									<label><h5>Email</h5></label>
+									<input type="email" name="" class="form-control rounded-pill" value="Ronke123@larvel.com">
 								</div>
 
 								<div class="mb-3">
-									<button class="btn btn-outline-info text-dark">Create Post</button>
+									<button class="btn btn-outline-secondary">Edit Profile</button>
 								</div>
+
+								
 						</form>
 						</div>
 					</div>
