@@ -1,32 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "{{asset('css/mywork.css')}}"/>
-    </head>
-        <body>
-            <form action = "" target="_blank" method="post" autocomplet="on">
-                <label title = "surname firstname middlename" for="fname">Fullname</label><br>
-                <input type="text" name="fullname" id="fname" placeholder=" Adepeke Ronke" required><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="user@gmail.com" required><br>
-                <label for="phoneNo">Phone Number</label><br>
-                <input type="tel"  id="phoneNo" name="number" placeholder="+234-81-4361-1894" required><br>
-                <label for = "gender">Gender</label><br>
-                <select id = "gender" name = "gender" required>
-                <option value = "male">Male</option>
-                <option value = "female" selected>Female</option>
-                <option value = "others">Others</option>
-                </select><br>
-                <label for="DOB">Date of Birth</label><br>
-                <input type="date" id="DOB" name="birthday" required><br>
-                <label for="username">Username</label><br>
-                <input type="text" id="username" name="username" placeholder="Ronke" reuqired><br>
-                <label for="pwd">Password</label><br>
-                <input type="password" id="pwd" name="password" placeholder="R1234#" required><br>
-                <label for="myfile">Upload a file</label><br>
-                <input type="file" id="myfile" name="document"><br><br>
-                <input type = "Submit" Value = "Submit">
+@extends('Layouts.master')
+@section('title', 'Register')
+
+@section('content')
+    <div style="margin-top:100px;">
+        
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 offset-md-3">
+                   <div class="card">
+                       <div class="card-header">Register</div>
+
+                       <div class="card-body">
+                              <form action = "" target="_blank" method="post" autocomplet="on">
+
+                        <div class="mb-3">
+                           <label title = "surname firstname middlename" for="fname">Fullname</label>
+                            <input type="text" name="fullname" class="form-control rounded-pill" > 
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email"  class="form-control rounded-pill">
+                        </div>
+                
+
+                        <div class="mb-3">
+                            <label for="phoneNo">Phone Number</label>
+                            <input type="tel" name="number" class="form-control rounded-pill">
+                        </div>
+
+                        <div class="mb-3">
+                             <label for = "gender">Gender</label>
+                             <select  name = "gender" class="form-select rounded-pill">
+                                <option value="">Select Gender</option>
+                                <option value = "male">Male</option>
+                                <option value = "female" >Female</option>
+                                <option value = "others">Others</option>
+                             </select>
+                        </div>
+                
+                        <div class="mb-3">
+                           <label for="DOB">Date of Birth</label>
+                           <input type="date" name="birthday" class="form-control rounded-pill"> 
+                        </div>
+
+                        <div class="mb-3">
+                           <label for="username">Username</label>
+                           <input type="text" name="username" class="form-control rounded-pill">
+                        </div>
+
+                        <div class="mb-3">
+                           <label for="pwd">Password</label>
+                            <input type="password" name="password" class="form-control rounded-pill"> 
+                        </div>
+                
+                        <div class="mb-3">
+                          <label for="myfile">Upload a file</label>
+                          <input type="file" name="document" class="form-control rounded-pill"> 
+                        </div>
+                        
+                        <div class="mb-3">
+                            <button class="btn btn-success">Register</button>
+                        </div>
             </form>
-        </body>
-</html>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+@endsection

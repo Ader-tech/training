@@ -1,17 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "{{asset('css/mywork.css')}}"/>
-    </head>
-        <body>
-            <form action = "" target="_blank" autocomplete="on" method="post" >
-                <label for="username" title="your username">Username</label><br>
-                <input type="text" id="username" name="username" placeholder="Ronke" required><br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" placeholder="R1234#" required><br><br>
-                <input type = "Submit" Value = "Submit"><br><br>
-                <a href="forget password" target=_blank>forget password</a>? <a href="sign up">sign in</a>
-            </form>
-        </body>
-</html>
+@extends('Layouts.master')
+@section('title', 'Login')
+
+@section('content')
+    <div style="margin-top:150px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Login
+                        </div>
+
+                        <div class="card-body">
+                            <form action = "" target="_blank" autocomplete="on" method="post" >
+
+                                <div class="mb-3">
+                                   <label for="username" title="your username">Username</label><br>
+                                   <input type="text" name="username"class="form-control rounded-pill">
+                                </div>
+
+                                <div class="mb-3">
+                                   <label for="password" title="your username">Password</label><br>
+                                   <input type="password" name="password" class="form-control rounded-pill">
+                                </div>
+                
+
+                                <div class="mb-3">
+                                    <button class="btn btn-success">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

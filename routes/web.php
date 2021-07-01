@@ -9,6 +9,8 @@ use App\Http\Controllers\UserPageController;
 
 Route::get('/', [PageController::class, 'index']);
 Route::get('/show', [PageController::class, 'show']);
+Route::get('/login',[PageController::class, 'login']);
+Route::get('/register',[PageController::class, 'register']);
 
 
 
@@ -23,7 +25,5 @@ Route::get('/post/edit', [UserPageController::class, 'editPost']);
 
 
 //Admin Route
-Route::get('/index',[PageController::class, 'index']);
-Route::get('/login',[PageController::class, 'login']);
-Route::get('/register',[PageController::class, 'register']);
+
 
